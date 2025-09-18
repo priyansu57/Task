@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="/public/image/icon2.png" type="image/png">  <!-- Sets favicon for browser tab -->
+
+    <title>Bigspring</title><!-- Page title -->
+
+    <!-- Font Awesome icons (CDN link) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- Bootstrap 5 (for responsive layout, components, utilities) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/menubar.css">
+    <link rel="stylesheet" href="/public/css/Base.css">
+
+</head>
+<body>
+     <!-- Desktop Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 d-none d-md-flex nav-container ">
+        <div class="container d-flex justify-content-between  ">
+            <!-- Logo -->
+            <img src="https://tf-bigspring-light-astro.vercel.app/images/logo.png" alt="logo">
+            
+            <!-- Navigation Links -->
+            <div class=" w-fit" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex flex-row gap-2 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold " aria-current="page" href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link fw-semibold " href="/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold " href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active   fw-semibold " href="/Price.html">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Button -->
+            <div>
+                <button class="bg-custom-teal button-style text-white fw-semibold ">Get Started</button>
+            </div>      
+        </div>
+    </nav>
+
+     <!-- Mobile Navbar with Sidebar -->
+    <nav class="navbar navbar-expand-lg z-3 p-3 d-flex  d-md-none nav-container">
+        <div class="main_box">
+
+             <!-- Hidden checkbox for toggle -->
+            <input type="checkbox" id="check" />
+
+            <!-- Hamburger menu & logo -->
+            <div class="btn_one  d-flex gap-5 justify-content-between align-content-center">
+              <label for="check" >
+                <i class="fa-solid fa-bars"></i>
+              </label>
+                <img src="https://tf-bigspring-light-astro.vercel.app/images/logo.png" class="mt-3" alt="logo">
+            </div>
+      
+            <!-- Sidebar Menu -->
+            <div class="sidebar_menu">
+              <div class="logo">
+                <a href="#">Bigspring</a>
+              </div>
+              
+              <!-- Close button -->
+              <div class="btn_two">
+                <label for="check" >
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+              </div>
+      
+              <!-- Menu Links -->
+              <div class="menu">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="/Home.html">Home</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <a href="/About.html">About</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <a href="/contact.html">Contact</a>
+                  </li>
+                   <li>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <a href="/Price.html">Pricing</a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="social_media">
+            <ul>
+              <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Pricing</h2>
+        <div class="row justify-content-center">
+          
+          <!-- Basic Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Basic Plan</h5>
+                <h3 class="my-3">$49 <small class="text-muted">/month</small></h3>
+                <p class="text-muted">Best For Small Individuals</p>
+                <ul class="list-unstyled my-3">
+                  <li>✔ Express Service</li>
+                  <li>✔ Customs Clearance</li>
+                  <li>✔ Time-Critical Services</li>
+                </ul>
+                <a href="#" class="btn btn-outline-info rounded-pill">Get started for free</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Plan (Highlighted) -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-lg h-100 border-info">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Professional Plan</h5>
+                <h3 class="my-3">$69 <small class="text-muted">/month</small></h3>
+                <p class="text-muted">Best For Professionals</p>
+                <ul class="list-unstyled my-3">
+                  <li>✔ Express Service</li>
+                  <li>✔ Customs Clearance</li>
+                  <li>✔ Time-Critical Services</li>
+                  <li>✔ Cloud Service</li>
+                  <li>✔ Best Dashboard</li>
+                </ul>
+                    <button class="bg-custom-teal button-style text-white fw-semibold ">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Business Plan</h5>
+                <h3 class="my-3">$99 <small class="text-muted">/month</small></h3>
+                <p class="text-muted">Best For Large Individuals</p>
+                <ul class="list-unstyled my-3">
+                  <li>✔ Express Service</li>
+                  <li>✔ Customs Clearance</li>
+                  <li>✔ Time-Critical Services</li>
+                </ul>
+                <a href="#" class="btn btn-outline-info rounded-pill">Get started</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center align-content-center flex-lg-row rounded-3 bg-light w-auto gap-5 gap-lg-2  mt-5 p-5 flex-column flex-md-row">
+                <img src="https://tf-bigspring-light-astro.vercel.app/images/cta.png" class="img-fluid" alt="last-banner">
+                <div>
+                    <h1>Need a larger plan ?</h1>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="/contact.html" class="bg-custom-teal button-style text-white fw-medium ">Contact Us</a>
+                </div>
+          </div>
+    </section>
+
+    <footer class="text-dark mt-4 pt-5 pb-3">
+      <div class="container  text-4 bg-custom-sky p-2  ">
+        <div class="row">
+          <!-- Company -->
+          <div class=" col-4 col-lg-3 mb-md-4">
+            <h5 class="fw-bold">Company</h5>
+            <ul class="list-unstyled lh-lg">
+              <li class="text-decoration-none  text-dark">Pricing</li>
+              <li class="text-decoration-none text-dark">Quick Start</li>
+            </ul>
+          </div>
+
+          <!-- Product -->
+          <div class=" col-4 col-lg-3 mb-md-4">
+            <h5 class="fw-bold">Product</h5>
+            <ul class="list-unstyled lh-lg">
+              <li class="text-decoration-none fw-light text-dark">Features</li>
+              <li class="text-decoration-none text-dark">Platform</li>
+              <li class="text-decoration-none text-dark">Pricing</li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-4 col-lg-3 mb-md-4">
+            <h5 class="fw-bold">Support</h5>
+            <ul class="list-unstyled lh-lg">
+              <li class="text-decoration-none text-dark">FAQ</li>
+              <li class="text-decoration-none text-dark">Privacy Policy</li>
+              <li class="text-decoration-none text-dark">Terms & Conditions</li>
+            </ul>
+          </div>
+
+          <!-- Logo + About -->
+          <div class="col-md-3 mb-4">
+            <h5 class="fw-bold d-flex align-items-center">
+              <img src="https://tf-bigspring-light-astro.vercel.app/images/logo.png" alt="Logo" style="height: 30px;" class="me-2">
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.</p>
+
+            <!-- Social Icons -->
+            <div class="d-flex gap-3">
+              <p href="#" class=" border border-info rounded-circle p-2"><i class="fa-brands fa-facebook" style="color: #63E6BE;"></i></p>
+              <p href="#" class="text-dark border border-info rounded-circle p-2"><i class="fa-brands fa-instagram" style="color: #63E6BE;"></i></p>
+              <p href="#" class="text-infoborder-info border border-info rounded-circle p-2"><i class="fa-brands fa-twitter" style="color: #63E6BE;"></i></p>
+              <p href="#" class="text-infoborder-info border border-info rounded-circle p-2"><i class="fa-brands fa-linkedin" style="color: #63E6BE;"></i></i></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom line -->
+        <hr>
+        <div class="text-center">
+          <small>Designed and Developed By Themefisher</small>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
