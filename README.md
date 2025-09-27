@@ -46,6 +46,7 @@ public/
 ## 📸 Screenshots (Example)
 
 > Add screenshots (e.g. `home.png`, `contact.png`) to visually showcase each page.
+> <img width="2804" height="1604" alt="image" src="https://github.com/user-attachments/assets/8820fc48-fdb5-4c12-981f-c1ddb89e5d62" />
 
 ---
 
